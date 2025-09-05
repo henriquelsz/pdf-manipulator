@@ -23,7 +23,7 @@ def main():
     else:
         prompt = os.environ["ISSUE_BODY"]
 
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.0-pro')
     response = model.generate_content(prompt)
 
     post_comment(
